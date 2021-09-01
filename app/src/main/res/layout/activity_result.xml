@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aa"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/duree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="duree"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"
+        android:text="Duree nécessaire:"
+        android:textColor="@color/colorBlack"
+
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cout"
+        app:layout_constraintTop_toBottomOf="@+id/cout" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:text="                                                              "
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="80dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="372dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="80dp"
+        android:text="   Affichage des résultats"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:text="La quantité d'eau que vous avez entré est :"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/quntity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="quntity"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="La température est :"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/quntity"
+        app:layout_constraintStart_toStartOf="@+id/quntity"
+        app:layout_constraintTop_toBottomOf="@+id/quntity"
+
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Temperature"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="L'énergie est:"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/Temperature"
+        app:layout_constraintStart_toStartOf="@+id/Temperature"
+        app:layout_constraintTop_toBottomOf="@+id/Temperature"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <TextView
+
+        android:id="@+id/energie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="energie"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Cout est:"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/energie"
+        app:layout_constraintStart_toStartOf="@+id/energie"
+        app:layout_constraintTop_toBottomOf="@+id/energie"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/cout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="cout"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="64dp"
+        android:text="Le douche sera a :"
+        android:textColor="@color/colorBlack"
+
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/cout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cout"
+        app:layout_constraintTop_toBottomOf="@+id/cout" />
+
+    <TextView
+
+        android:id="@+id/DateDouch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DateDouch"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

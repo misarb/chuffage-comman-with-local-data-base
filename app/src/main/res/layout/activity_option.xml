@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@drawable/bb"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    tools:context=".Option">
+
+    <TextView
+        android:id="@+id/txtclose1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_security" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="   Les options     "
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/colorgreen"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:onClick="opt1"
+                android:id="@+id/opt1"
+                android:layout_width="114dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:text="     Option 1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/green"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:onClick="opt2"
+                android:id="@+id/opt2"
+                android:layout_width="114dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:text="     Option 2"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="OnClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/bluelight"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:onClick="opt3"
+                android:id="@+id/opt3"
+                android:layout_width="114dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:text="     Option 3"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="OnClick"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnfollow"
+        android:layout_width="207dp"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:text=" choisir l'option"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

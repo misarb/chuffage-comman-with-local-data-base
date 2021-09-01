@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aa"
+    tools:context=".ConfigurationActivity">
+
+
+    <TextView
+
+        android:id="@+id/text_view_date"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="190dp"
+        android:layout_width="358dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+
+        android:shadowColor="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/t"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="@+id/t"
+        app:layout_constraintTop_toBottomOf="@+id/t" />
+
+    <Button
+        android:id="@+id/BtnManualleConfig"
+        android:layout_width="232dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="85dp"
+        android:background="@drawable/btn_bgman"
+        android:onClick="ShowPopup"
+        android:text="Configuration manuelle"
+
+        android:textColor="@color/colorWhite"
+        android:translationY="350dp" />
+
+    <Button
+        android:id="@+id/BtnMAutomaticConfig"
+        android:layout_width="232dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="85dp"
+        android:layout_below="@id/BtnManualleConfig"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/btn_bgau"
+        android:onClick="openAutmatic"
+        android:text="Configuration automatique "
+        android:textColor="@color/colorWhite"
+        android:translationY="350dp" />
+
+
+</RelativeLayout>

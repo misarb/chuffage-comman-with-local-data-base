@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aa"
+    tools:context=".HomePage">
+
+    <Button
+        android:id="@+id/EconomyBtn"
+        android:layout_width="267dp"
+        android:layout_height="79dp"
+
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/btn_bg0"
+        android:text="Mode economique"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnconfort" />
+
+    <Button
+        android:id="@+id/btnconfort"
+        android:layout_width="267dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/btn_bg1"
+
+        android:text="Mode Confort"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/btnconfortplus" />
+
+    <Button
+        android:id="@+id/btnconfortplus"
+        android:layout_width="263dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/btn_bg2"
+        android:text="Mode Confort Plus"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="301dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="547dp"
+        android:text="Choisir votre mode de consommation"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="404dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:shadowColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/t"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="@+id/t"
+        app:layout_constraintTop_toBottomOf="@+id/t" />
+
+    <TextView
+        android:id="@+id/f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="@color/colorWhite"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/btnconfortplus"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/btnconfortplus"
+        app:layout_constraintTop_toBottomOf="@+id/btnconfortplus" />
+
+    <TextView
+        android:id="@+id/f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="@color/colorWhite"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/f1"
+        app:layout_constraintStart_toStartOf="@+id/f1"
+        app:layout_constraintTop_toBottomOf="@+id/f1" />
+
+
+    <TextView
+        android:id="@+id/f3"
+        android:layout_width="331dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="505dp"
+        android:shadowColor="@color/colorWhite"
+        android:text="La température d'eau est 10°C"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/f4"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="451dp"
+        android:shadowColor="@color/colorWhite"
+        android:text="La qunatité d'eau dans le resérvoire est 20L"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/f3" />
+
+    <TextView
+        android:id="@+id/f5"
+        android:layout_width="324dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="380dp"
+        android:shadowColor="@color/colorWhite"
+        android:text="La température de réservoire est 27°C "
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/f4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
